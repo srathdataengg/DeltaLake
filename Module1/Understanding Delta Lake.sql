@@ -34,4 +34,8 @@ describe history employees;
 
 -- COMMAND ----------
 
--- MAGIC %fs ls 'dbfs:/user/hive/warehouse/employees'
+-- MAGIC %fs ls 'dbfs:/user/hive/warehouse/employees/_delta_log'
+
+-- COMMAND ----------
+
+-- MAGIC %fs head 'dbfs:/user/hive/warehouse/employees/_delta_log/00000000000000000003.json'
